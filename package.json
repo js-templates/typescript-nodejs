@@ -1,0 +1,26 @@
+{
+  "name": "@js-templates/typescript-nodejs",
+  "version": "1.0.0",
+  "description": "Typescript Node.js App Template",
+  "author": "Evgenii Zakharov",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "dev": "tsx watch src/index.ts",
+    "build": "bun build.js",
+    "typecheck": "tsc --noEmit",
+    "lint": "biome lint .",
+    "lint:fix": "pnpm lint --write && biome format . --write"
+  },
+  "packageManager": "pnpm@10.26.2",
+  "dependencies": {
+    "dotenv": "^17.2.3",
+    "zod": "^4.2.1"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "2.3.10",
+    "@types/node": "^24.9.2",
+    "tsx": "^4.21.0",
+    "typescript": "^5.9.3"
+  }
+}
